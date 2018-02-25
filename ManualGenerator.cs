@@ -722,12 +722,15 @@ namespace VanillaRuleGenerator
 			if (!HTMLManualGenerators.TryGetValue(name, out object generator))
 				return string.Empty;
 
-			if (generator is HTMLManualNames)
-                return GetHTMLManual(seed, (HTMLManualNames) generator);
-            else if (generator is ModRuleGenerator)
-                return ((ModRuleGenerator) generator).GetHTML(seed);
-            else
-                return string.Empty;
+			switch (generator)
+			{
+				case HTMLManualNames names:
+					return GetHTMLManual(seed, names);
+				case ModRuleGenerator modRuleGenerator:
+					return modRuleGenerator.GetHTML(seed);
+				default:
+					return string.Empty;
+			}
         }
 
 	    public string[] GetHTMLFileNames()
