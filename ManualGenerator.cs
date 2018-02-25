@@ -141,17 +141,7 @@ namespace VanillaRuleGenerator
                 HTMLManualGenerators[_manualFileNames[i].Name] = (HTMLManualNames) i;
             }
 
-            if (Directory.Exists("ModAssemblies"))
-            {
-                foreach (var file in Directory.GetFiles("ModAssemblies"))
-                {
-                    var modRuleGenerator = LoadModRuleGeneratorAssembly(file);
-                    if (modRuleGenerator == null)
-                        continue;
-                    var manualName = modRuleGenerator.GetHTMLFileName();
-                    HTMLManualGenerators[manualName] = modRuleGenerator;
-                }
-            }
+	        LoadModAssemblies();
 
 
         }
@@ -164,6 +154,32 @@ namespace VanillaRuleGenerator
             // ReSharper disable once InconsistentNaming
             internal static readonly ManualGenerator instance = new ManualGenerator();
         }
+
+	    private void LoadModAssemblies()
+	    {
+			if (Directory.Exists("ModAssemblies"))
+			{
+				foreach (var file in Directory.GetFiles("ModAssemblies"))
+				{
+					var modRuleGenerator = LoadModRuleGeneratorAssembly(file);
+					if (modRuleGenerator == null)
+						continue;
+					var manualName = modRuleGenerator.GetHTMLFileName();
+					HTMLManualGenerators[manualName] = modRuleGenerator;
+				}
+			}
+			else
+			{
+				try
+				{
+					Directory.CreateDirectory("ModAssemblies");
+				}
+				catch
+				{
+					//
+				}
+			}
+		}
 
         public static void DebugLog(string message, params object[] args)
         {
@@ -178,36 +194,34 @@ namespace VanillaRuleGenerator
             if (_assemblyLoadFailure.ContainsKey(assemblyName))
                 return null;
 
-			if (!_ruleGenerators.TryGetValue(assemblyName, out ModRuleGenerator ruleGenerator))
-			{
-				try
-				{
-					ruleGenerator = ModRuleGenerator.GetRuleGenerator(Assembly.LoadFrom(assemblyName));
-					if (ruleGenerator != null)
-					{
-						_ruleGenerators[assemblyName] = ruleGenerator;
-					}
-					else
-					{
-						_assemblyLoadFailure[assemblyName] = true;
-						return null;
-					}
-				}
-				catch (FileNotFoundException)
-				{
-					return null;
-				}
-				catch (FileLoadException)
-				{
-					return null;
-				}
-				catch (Exception ex)
-				{
-					_assemblyLoadFailure[assemblyName] = true;
-					return null;
-				}
-			}
-			return ruleGenerator;
+	        if (_ruleGenerators.TryGetValue(assemblyName, out ModRuleGenerator ruleGenerator)) return ruleGenerator;
+	        try
+	        {
+		        ruleGenerator = ModRuleGenerator.GetRuleGenerator(Assembly.LoadFrom(assemblyName));
+		        if (ruleGenerator != null)
+		        {
+			        _ruleGenerators[assemblyName] = ruleGenerator;
+		        }
+		        else
+		        {
+			        _assemblyLoadFailure[assemblyName] = true;
+			        return null;
+		        }
+	        }
+	        catch (FileNotFoundException)
+	        {
+		        return null;
+	        }
+	        catch (FileLoadException)
+	        {
+		        return null;
+	        }
+	        catch (Exception ex)
+	        {
+		        _assemblyLoadFailure[assemblyName] = true;
+		        return null;
+	        }
+	        return ruleGenerator;
         }
 
         public static bool GenerateModManual(string assemblyName, int seed)
@@ -704,6 +718,7 @@ namespace VanillaRuleGenerator
 
         public string GetHTMLManual(int seed, string name)
         {
+	        LoadModAssemblies();
 			if (!HTMLManualGenerators.TryGetValue(name, out object generator))
 				return string.Empty;
 
@@ -717,7 +732,8 @@ namespace VanillaRuleGenerator
 
 	    public string[] GetHTMLFileNames()
 	    {
-		    return HTMLManualGenerators.Select(x => x.Key).ToArray();
+		    LoadModAssemblies();
+			return HTMLManualGenerators.Select(x => x.Key).ToArray();
 	    }
 
 
