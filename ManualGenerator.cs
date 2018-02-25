@@ -604,7 +604,7 @@ namespace VanillaRuleGenerator
                 case "Wires.html":
                     WriteWiresManual(path, file, ref replacements, outputFile);
                     break;
-                case "Wire Sequences.html":
+                case "Wire Sequence.html":
                     WriteWireSequenceManual(path, file, ref replacements, outputFile);
                     break;
                 case "Morse Code.html":
@@ -616,16 +616,16 @@ namespace VanillaRuleGenerator
                 case "Knob.html":
                     WriteNeedyKnobManual(path, file, ref replacements, outputFile);
                     break;
-                case "Passwords.html":
+                case "Password.html":
                     WritePasswordManual(path, file, ref replacements, outputFile);
                     break;
                 case "Simon Says.html":
                     WriteSimonSaysManual(path, file, ref replacements, outputFile);
                     break;
-                case "Keypads.html":
+                case "Keypad.html":
                     WriteKeypadsManual(path, file, ref replacements, outputFile);
                     break;
-                case "Mazes.html":
+                case "Maze.html":
                     WriteMazesManual(path, file, ref replacements, outputFile);
                     break;
                 case "Complicated Wires.html":
