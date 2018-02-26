@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Newtonsoft.Json;
 
 namespace VanillaRuleGenerator.Edgework
 {
@@ -12,7 +11,7 @@ namespace VanillaRuleGenerator.Edgework
         public static string WidgetQueryTwofactor = "twofactor";
         public static string WidgetTwofactorKey = "twofactor_key";
 
-        private class IndicatorJSON
+        internal class IndicatorJSON
         {
             public string label = null;
             public string on = null;
@@ -24,28 +23,28 @@ namespace VanillaRuleGenerator.Edgework
             }
         }
 
-        private class ColorIndicatorJSON
+	    internal class ColorIndicatorJSON
         {
             public string label = null;
             public string color = null;
         }
 
-        private class TwoFactorJSON
+	    internal class TwoFactorJSON
         {
             public int twofactor_key = 0;
         }
 
-        private class BatteryJSON
+	    internal class BatteryJSON
         {
             public int numbatteries = 0;
         }
 
-        private class PortsJSON
+	    internal class PortsJSON
         {
             public string[] presentPorts = null;
         }
 
-        private class SerialNumberJSON
+	    internal class SerialNumberJSON
         {
             public string serial = null;
         }
@@ -391,7 +390,7 @@ namespace VanillaRuleGenerator.Edgework
         public static string GetSerialNumber(this KMBombInfo bombInfo)
         {
             var ret = GetSerialNumberEntries(bombInfo).FirstOrDefault();
-            return ret == null ? null : ret.serial;
+            return ret?.serial ?? "";
         }
 
         public static IEnumerable<char> GetSerialNumberLetters(this KMBombInfo bombInfo)
