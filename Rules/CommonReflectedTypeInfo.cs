@@ -9,7 +9,7 @@ namespace VanillaRuleGenerator.Rules
 
         public static void DebugLog(string message, params object[] args)
         {
-            Debug.LogFormat("[KTaNE Helper] {0}", new object[] { string.Format(message, args) });
+            Debug.LogFormat("[VanillaRuleGenerator] {0}", new object[] { string.Format(message, args) });
         }
     }
 }
