@@ -134,16 +134,32 @@ namespace VanillaRuleGenerator
 
         private Dictionary<string,object> HTMLManualGenerators = new Dictionary<string, object>();
 
-        private ManualGenerator()
+	    private void CreateDirectories()
+	    {
+			try
+			{
+				if (!string.IsNullOrEmpty(ModAssemblyDirectory))
+					Directory.CreateDirectory(ModAssemblyDirectory);
+				if (!string.IsNullOrEmpty(ManualCacheDirectory))
+					Directory.CreateDirectory(ManualCacheDirectory);
+			}
+			catch
+			{
+			}
+		}
+
+	    private static string ModAssemblyDirectory;
+	    private static string ManualCacheDirectory;
+		private ManualGenerator()
         {
             for (var i = 0; i <= (int) HTMLManualNames.Index; i++)
             {
                 HTMLManualGenerators[_manualFileNames[i].Name] = (HTMLManualNames) i;
             }
-
-	        LoadModAssemblies();
-
-
+	        ModAssemblyDirectory = "ModAssemblies";
+	        ManualCacheDirectory = "ModifiedVanillaManuals";
+	        CreateDirectories();
+			LoadModAssemblies();
         }
         public static ManualGenerator Instance => Nested.instance;
 
@@ -155,11 +171,24 @@ namespace VanillaRuleGenerator
             internal static readonly ManualGenerator instance = new ManualGenerator();
         }
 
+	    public ManualGenerator(string modAssemblyDirectory, string manualCacheDirectory)
+	    {
+		    ModAssemblyDirectory = modAssemblyDirectory;
+		    ManualCacheDirectory = manualCacheDirectory;
+		    CreateDirectories();
+		    for (var i = 0; i <= (int)HTMLManualNames.Index; i++)
+		    {
+			    HTMLManualGenerators[_manualFileNames[i].Name] = (HTMLManualNames)i;
+		    }
+		    LoadModAssemblies();
+		}
+
 	    private void LoadModAssemblies()
 	    {
-			if (Directory.Exists("ModAssemblies"))
+		    if (string.IsNullOrEmpty(ModAssemblyDirectory)) return;
+			if (Directory.Exists(ModAssemblyDirectory))
 			{
-				foreach (var file in Directory.GetFiles("ModAssemblies"))
+				foreach (var file in Directory.GetFiles(ModAssemblyDirectory, "*.dll"))
 				{
 					var modRuleGenerator = LoadModRuleGeneratorAssembly(file);
 					if (modRuleGenerator == null)
@@ -168,20 +197,9 @@ namespace VanillaRuleGenerator
 					HTMLManualGenerators[manualName] = modRuleGenerator;
 				}
 			}
-			else
-			{
-				try
-				{
-					Directory.CreateDirectory("ModAssemblies");
-				}
-				catch
-				{
-					//
-				}
-			}
 		}
 
-        public static void DebugLog(string message, params object[] args)
+		public static void DebugLog(string message, params object[] args)
         {
             CommonReflectedTypeInfo.DebugLog(message, args);
         }
@@ -660,10 +678,12 @@ namespace VanillaRuleGenerator
 
         public static string GetManualPath(int seed)
         {
-            return Path.Combine("ModifiedVanillaManuals", seed.ToString());
+	        return string.IsNullOrEmpty(ManualCacheDirectory) 
+				? null 
+				: Path.Combine(ManualCacheDirectory, seed.ToString());
         }
 
-        private string InitializeManaulWriting(int seed, out List<ReplaceText> replacements, bool forceRewriteSeed=false)
+        private bool InitializeManaulWriting(int seed, out List<ReplaceText> replacements, out string path, bool forceRewriteSeed=false)
         {
             if (!forceRewriteSeed)
             {
@@ -672,14 +692,15 @@ namespace VanillaRuleGenerator
                     if (seed != 1)
                         DebugLog($"Manual already written for seed #{seed}.");
                     replacements = null;
-                    return null; //Seed 1 is the Original Vanilla seed.
+	                path = null;
+                    return false; //Seed 1 is the Original Vanilla seed.
                 }
                 PreviousSeeds.Add(seed);
             }
 
             _ruleManager.Initialize(seed);
 
-            var path = GetManualPath(seed);
+            path = GetManualPath(seed);
             //if (Directory.Exists(path))
             //    return;
 
@@ -690,7 +711,7 @@ namespace VanillaRuleGenerator
             {
                 DebugLog("Can't write any manuals :(");
                 replacements = null;
-                return null;
+                return false;
             }
 
             replacements = new List<ReplaceText>
@@ -700,14 +721,14 @@ namespace VanillaRuleGenerator
                 new ReplaceText {Original = "<span class=\"page-header-doc-title\">Keep Talking and Nobody Explodes</span>", Replacement = $"<span class=\"page-header-doc-title\">Keep Talking and Nobody Explodes - Seed #{seed}</span>"}
             };
 
-            return path;
+            return true;
         }
 
         public string GetHTMLManual(int seed, HTMLManualNames name)
         {
             if (name < 0 || name > HTMLManualNames.Index)
                 return null;
-			if (string.IsNullOrEmpty(InitializeManaulWriting(seed, out List<ReplaceText> replacements, true)))
+			if (!InitializeManaulWriting(seed, out List<ReplaceText> replacements, out string _, true))
 				return null;
 			for (var i = name == HTMLManualNames.Index ? 0 : (int)name; i <= (int) name; i++)
             {
@@ -716,21 +737,49 @@ namespace VanillaRuleGenerator
             return _manualFileNames[(int) name].ToString(replacements);
         }
 
-        public string GetHTMLManual(int seed, string name)
+        public string GetHTMLManual(int seed, string name, bool write=false)
         {
+	        if (string.IsNullOrEmpty(name)) return string.Empty;
+	        if (write && !string.IsNullOrEmpty(GetManualPath(seed)) && File.Exists(Path.Combine(GetManualPath(seed), name)))
+	        {
+		        try
+		        {
+					return File.ReadAllText(Path.Combine(GetManualPath(seed), name));
+		        }
+		        catch
+		        {
+		        }
+	        }
+
 	        LoadModAssemblies();
 			if (!HTMLManualGenerators.TryGetValue(name, out object generator))
 				return string.Empty;
 
+	        string manual;
 			switch (generator)
 			{
 				case HTMLManualNames names:
-					return GetHTMLManual(seed, names);
+					manual = GetHTMLManual(seed, names);
+					break;
 				case ModRuleGenerator modRuleGenerator:
-					return modRuleGenerator.GetHTML(seed);
+					manual = modRuleGenerator.GetHTML(seed);
+					break;
 				default:
 					return string.Empty;
 			}
+	        if (write && !string.IsNullOrEmpty(GetManualPath(seed)))
+	        {
+		        try
+		        {
+			        if (!Directory.Exists(GetManualPath(seed)))
+				        Directory.CreateDirectory(GetManualPath(seed));
+			        File.WriteAllText(Path.Combine(GetManualPath(seed), name), manual);
+		        }
+		        catch
+		        {
+		        }
+	        }
+	        return manual;
         }
 
 	    public string[] GetHTMLFileNames()
@@ -742,7 +791,7 @@ namespace VanillaRuleGenerator
 
         public void WriteIndexManaul(int seed)
         {
-			var path = InitializeManaulWriting(seed, out List<ReplaceText> replacements);
+			InitializeManaulWriting(seed, out List<ReplaceText> replacements, out string path);
 			if (string.IsNullOrEmpty(path))
                 return;
             foreach (var manual in _manualFileNames)
@@ -753,7 +802,7 @@ namespace VanillaRuleGenerator
 
         public void WriteManual(int seed)
         {
-			var path = InitializeManaulWriting(seed, out List<ReplaceText> replacements);
+			InitializeManaulWriting(seed, out List<ReplaceText> replacements, out string path);
 			if (string.IsNullOrEmpty(path))
                 return;
 
