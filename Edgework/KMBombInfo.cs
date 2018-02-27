@@ -5,14 +5,14 @@ namespace VanillaRuleGenerator.Edgework
 {
     public class KMBombInfo
     {
-        public static string QUERYKEY_GET_SERIAL_NUMBER = "serial";
-        public static string QUERYKEY_GET_BATTERIES = "batteries";
-        public static string QUERYKEY_GET_INDICATOR = "indicator";
-        public static string QUERYKEY_GET_PORTS = "ports";
+        internal static string QUERYKEY_GET_SERIAL_NUMBER = "serial";
+	    internal static string QUERYKEY_GET_BATTERIES = "batteries";
+	    internal static string QUERYKEY_GET_INDICATOR = "indicator";
+	    internal static string QUERYKEY_GET_PORTS = "ports";
 
-        
 
-        public List<string> QueryWidgets(string queryKey, string queryInfo)
+
+	    internal List<string> QueryWidgets(string queryKey, string queryInfo)
         {
             var list = new List<string>();
 

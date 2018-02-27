@@ -3,14 +3,8 @@ using static VanillaRuleGenerator.Edgework.KMBombInfoExtensions;
 
 namespace VanillaRuleGenerator.Edgework
 {
-	public class JsonConvert
+	internal class JsonConvert
 	{
-		public delegate void DeserializeDelegate<T>(out T type, string query);
-		public delegate string SerializeDelegate(object data);
-
-		public static DeserializeDelegate<object> Deserialize;
-		public static SerializeDelegate Serialize;
-
 		public static T DeserializeObject<T>(string query)
 		{
 			try
