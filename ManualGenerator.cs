@@ -216,7 +216,7 @@ namespace VanillaRuleGenerator
 	        {
 		        return null;
 	        }
-	        catch (Exception ex)
+	        catch (Exception)
 	        {
 		        _assemblyLoadFailure[assemblyName] = true;
 		        return null;

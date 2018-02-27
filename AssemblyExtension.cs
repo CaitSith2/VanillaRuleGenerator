@@ -17,7 +17,7 @@ namespace VanillaRuleGenerator
             {
                 return e.Types.Where(x => x != null);
             }
-            catch (Exception e)
+            catch
             {
                 return new List<Type>();
             }
