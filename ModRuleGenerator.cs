@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using VanillaRuleGenerator.Helpers;
+using Debug = VanillaRuleGenerator.Extensions.Debug;
 
 namespace VanillaRuleGenerator
 {
@@ -20,24 +21,24 @@ namespace VanillaRuleGenerator
         private object _ruleGenerator;
 
 
-        private void InitializeRules(int seed)
-        {
-            if (_ruleGenerator == null)
-            {
-                _ruleGenerator = Activator.CreateInstance(_ruleGeneratorType);
-                _seed = seed;
-                _initRNG.Invoke(_ruleGenerator, new object[] {_seed, typeof(MonoRandom)});
-                _createRules.Invoke(_ruleGenerator, null);
-            }
-            else if (_seed != seed)
-            {
-                _seed = seed;
-                _initRNG.Invoke(_ruleGenerator, new object[] { _seed, typeof(MonoRandom) });
-                _createRules.Invoke(_ruleGenerator, null);
-            }
-        }
+	    private void InitializeRules(int seed)
+	    {
+		    if (_ruleGenerator == null)
+		    {
+			    _ruleGenerator = Activator.CreateInstance(_ruleGeneratorType);
+			    _seed = seed;
+			    _initRNG.Invoke(_ruleGenerator, new object[] {_seed, typeof(MonoRandom)});
+			    _createRules.Invoke(_ruleGenerator, null);
+		    }
+		    else if (_seed != seed)
+		    {
+			    _seed = seed;
+			    _initRNG.Invoke(_ruleGenerator, new object[] {_seed, typeof(MonoRandom)});
+			    _createRules.Invoke(_ruleGenerator, null);
+		    }
+	    }
 
-        public string GetHTML(int seed)
+	    public string GetHTML(int seed)
         {
 			return GetHTML(seed, out string notUsed);
 		}
@@ -118,7 +119,7 @@ namespace VanillaRuleGenerator
         public static ModRuleGenerator GetRuleGenerator(Assembly assembly)
         {
             var ruleGeneratorType = assembly.GetSafeTypes().FirstOrDefault(t => t.FullName != null && t.FullName.EndsWith("AbstractRuleGenerator"));
-            if (ruleGeneratorType == null) return null;
+	        if (ruleGeneratorType == null) throw new Exception($"Could not find AbstractRuleGenerator class in assembly {assembly}");
             var implementsType = assembly.GetSafeTypes().Where(p => ruleGeneratorType.IsAssignableFrom(p)).FirstOrDefault(t => t != ruleGeneratorType) ?? ruleGeneratorType;
 
             var initRNGMethod = ruleGeneratorType.GetMethods(BindingFlags.Public | BindingFlags.Instance)
@@ -128,31 +129,38 @@ namespace VanillaRuleGenerator
                                      m.GetParameters()[0].ParameterType == typeof(int) &&
                                      m.GetParameters()[1].ParameterType == typeof(Type));
 
+	        if (initRNGMethod == null) throw new Exception($"Could not find InitializeRNG method, or its return type/parameters are of the wrong types in assembly {assembly}");
+
             var getHTMLMethod = implementsType.GetMethods(BindingFlags.Public | BindingFlags.Instance)
                 .FirstOrDefault(m => m.Name.Equals("GetHTMLManual") &&
                                      m.ReturnType == typeof(string) &&
                                      m.GetParameters().Length == 1);
 
-            var createRulesMethod = implementsType.GetMethods(BindingFlags.Public | BindingFlags.Instance)
+	        if (getHTMLMethod == null) throw new Exception($"Could not find GetHTMLManual method, or its return type/parameters are of the wrong types in assembly {assembly}");
+
+			var createRulesMethod = implementsType.GetMethods(BindingFlags.Public | BindingFlags.Instance)
                 .FirstOrDefault(m => m.Name.Equals("CreateRules") &&
                                      m.ReturnType == typeof(void) &&
                                      m.GetParameters().Length == 0);
 
-            var getTextFilesMethod = implementsType.GetMethods(BindingFlags.Public | BindingFlags.Instance)
+	        if (createRulesMethod == null) throw new Exception($"Could not find CreateRules method, or its return type/parameters are of the wrong types in assembly {assembly}");
+
+			var getTextFilesMethod = implementsType.GetMethods(BindingFlags.Public | BindingFlags.Instance)
                 .FirstOrDefault(m => m.Name.Equals("GetTextFiles") &&
                                      m.ReturnType == typeof(string[]) &&
                                      m.GetParameters().Length == 1 &&
                                      m.GetParameters()[0].IsOut);
 
+	        if (getTextFilesMethod == null) throw new Exception($"Could not find GetTextFiles method, or its return type/parameters are of the wrong types in assembly {assembly}");
 
-            var getBinaryFilesMethod = implementsType.GetMethods(BindingFlags.Public | BindingFlags.Instance)
+
+			var getBinaryFilesMethod = implementsType.GetMethods(BindingFlags.Public | BindingFlags.Instance)
                 .FirstOrDefault(m => m.Name.Equals("GetBinaryFiles") &&
                                      m.ReturnType == typeof(byte[][]) &&
                                      m.GetParameters().Length == 1 &&
                                      m.GetParameters()[0].IsOut);
 
-            if (initRNGMethod == null || getHTMLMethod == null || createRulesMethod == null || getTextFilesMethod == null || getBinaryFilesMethod == null)
-                return null;
+	        if (getBinaryFilesMethod == null) throw new Exception($"Could not find GetBinaryFiles method, or its return type/parameters are of the wrong types in assembly {assembly}");
 
             var ruleGen = new ModRuleGenerator
             {

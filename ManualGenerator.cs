@@ -226,16 +226,19 @@ namespace VanillaRuleGenerator
 			        return null;
 		        }
 	        }
-	        catch (FileNotFoundException)
+	        catch (FileNotFoundException ex)
 	        {
+				Debug.LogException(ex, $"File {assemblyName} was not found:");
 		        return null;
 	        }
-	        catch (FileLoadException)
+	        catch (FileLoadException ex)
 	        {
+		        Debug.LogException(ex, $"A FileLoadException happened while loading assembly {assemblyName}:");
 		        return null;
 	        }
-	        catch (Exception)
+	        catch (Exception ex)
 	        {
+		        Debug.LogException(ex, $"Could not load {assemblyName} due to an exception. It is being skipped for the rest of this session.");
 		        _assemblyLoadFailure[assemblyName] = true;
 		        return null;
 	        }
