@@ -791,6 +791,17 @@ namespace VanillaRuleGenerator
 			return HTMLManualGenerators.Select(x => x.Key).ToArray();
 	    }
 
+	    public string[] GetVanillaHTMLFileNames()
+	    {
+		    return HTMLManualGenerators.Where(x => x.Value is HTMLManualNames htmlManualName && htmlManualName != HTMLManualNames.Index).Select(x => x.Key).OrderBy(x => x).ToArray();
+	    }
+
+	    public string[] GetModHTMLFileNames()
+	    {
+		    LoadModAssemblies();
+		    return HTMLManualGenerators.Where(x => x.Value is ModRuleGenerator).Select(x => x.Key).OrderBy(x => x).ToArray();
+	    }
+
 
         public void WriteIndexManaul(int seed)
         {
