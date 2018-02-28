@@ -1,73 +1,29 @@
 ﻿using System;
+using RT.Util;
 
 namespace VanillaRuleGenerator.Extensions
 {
     //Faking the Debug calls to make direct copy/paste code much easier.
     public static class Debug
     {
-		public delegate void LogMessageDelegate(string message);
-	    public static LogMessageDelegate LogMessageHandler;
+	    public static LoggerBase Logger;
 
-
-
-		//public static string log = string.Empty;
-
-		public static void Log(string message)
-        {
-	        LogMessageHandler?.Invoke(message);
-        }
-
-        public static void Log(string message, Object context)
-        {
-	        LogMessageHandler?.Invoke(string.Format(message, context));
-        }
-
-	    public static void LogError(object message){ }
-        public static void LogError(object message, Object context){}
-
-        public static void LogErrorFormat(string format, params object[] args){}
-        public static void LogErrorFormat(Object context, string format, params object[] args){}
-
-	    public delegate void LogExceptionDelegate(Exception exception, string message);
-	    public static LogExceptionDelegate LogExceptionHandler;
-
-		public static void LogException(Exception exception)
+	    public static void Log(string message)
 	    {
-		    LogExceptionHandler?.Invoke(exception, "An exception has occured:");
+		    LogFormat(message);
 	    }
 
-	    public static void LogException(Exception exception, Object context)
+	    public static void LogFormat(string format, params object[] args)
 	    {
-		    if (context is string message)
-		    {
-			    LogExceptionHandler?.Invoke(exception, message);
-		    }
-		    else
-		    {
-			    LogException(exception);
-		    }
+		    Logger?.Log(1, LogType.Info, string.Format(format, args));
 	    }
 
-        public static void LogFormat(string format, params object[] args)
-        {
-			LogMessageHandler?.Invoke(string.Format(format, args));
-		}
-
-	    public static void LogFormat(Object context, string format, params object[] args)
+		public static void LogException(Exception exception, string message = "An exception has occured:", LogType logType = LogType.Error, uint verbosity=1)
 	    {
-		    LogFormat(format, args);
+		    Logger?.Log(verbosity, logType, message);
+		    Logger?.Exception(exception, verbosity, logType);
 	    }
 
-		public static void LogWarning(object message){}
-        public static void LogWarning(object message, Object context){}
-
-        public static void LogWarningFormat(string format, params object[] args){}
-        public static void LogWarningFormat(Object context, string format, params object[] args){}
-
-        public static void LogAssertionFormat(string format, params object[] args){}
-        public static void LogAssertionFormat(Object context, string format, params object[] args){}
-
-        public static void LogAssertion(object message){}
-        public static void LogAssertion(object message, Object context){}
+        
     }
 }
