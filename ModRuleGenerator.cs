@@ -3,7 +3,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using VanillaRuleGenerator.Helpers;
-using Debug = VanillaRuleGenerator.Extensions.Debug;
 
 namespace VanillaRuleGenerator
 {
