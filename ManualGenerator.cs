@@ -675,7 +675,8 @@ namespace VanillaRuleGenerator
 
 	    public string[] GetVanillaHTMLFileNames()
 	    {
-		    return HTMLManualGenerators.Where(x => x.Value is HTMLManualNames htmlManualName && htmlManualName != HTMLManualNames.Index).Select(x => x.Key).OrderBy(x => x).ToArray();
+		    return HTMLManualGenerators.Where(x => x.Value is HTMLManualNames htmlManualName && htmlManualName != HTMLManualNames.Index
+				&& htmlManualName != HTMLManualNames.CapacitorDischarge && htmlManualName != HTMLManualNames.VentingGas).Select(x => x.Key).OrderBy(x => x).ToArray();
 	    }
 
 	    public string[] GetModHTMLFileNames()
