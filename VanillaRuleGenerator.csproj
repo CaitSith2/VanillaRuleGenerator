@@ -59,6 +59,7 @@
     <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="Extensions\StringWriterWithEncoding.cs" />
     <Compile Include="Extensions\Util.cs" />
+    <Compile Include="ManualGeneratorResources.cs" />
     <Compile Include="Manual\ManualFileName.cs" />
     <Compile Include="ManualGenerator.cs" />
     <Compile Include="ModRuleGenerator.cs" />

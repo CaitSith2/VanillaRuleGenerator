@@ -59,6 +59,7 @@
     <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="Extensions\StringWriterWithEncoding.cs" />
     <Compile Include="Extensions\Util.cs" />
+    <Compile Include="ManualGeneratorResourcesSlim.cs" />
     <Compile Include="Manual\ManualFileName.cs" />
     <Compile Include="ManualGenerator.cs" />
     <Compile Include="ModRuleGenerator.cs" />
@@ -70,10 +71,10 @@
     <Compile Include="Modules\VennWireComponent.cs" />
     <Compile Include="Modules\WhosOnFirstComponent.cs" />
     <Compile Include="Modules\WireSetComponent.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Include="Properties\ResourcesSlim.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
+      <DependentUpon>ResourcesSlim.resx</DependentUpon>
     </Compile>
     <Compile Include="VanillaRuleGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -429,9 +430,9 @@
     <None Include="ManualOutputFiles\Wires.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
+    <EmbeddedResource Include="Properties\ResourcesSlim.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <LastGenOutput>ResourcesSlim.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
