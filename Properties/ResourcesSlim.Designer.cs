@@ -61,120 +61,6 @@ namespace VanillaRuleGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] AnonymousPro_Bold {
-            get {
-                object obj = ResourceManager.GetObject("AnonymousPro_Bold", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] AnonymousPro_BoldItalic {
-            get {
-                object obj = ResourceManager.GetObject("AnonymousPro_BoldItalic", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] AnonymousPro_Italic {
-            get {
-                object obj = ResourceManager.GetObject("AnonymousPro_Italic", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] AnonymousPro_Regular {
-            get {
-                object obj = ResourceManager.GetObject("AnonymousPro_Regular", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 100.0 151.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l100.0 0l0 151.0l-100.0 0l0 -151.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l100.0 0l0 151.55905l-100.0 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m36.0450 [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Battery_AA {
-            get {
-                return ResourceManager.GetString("Battery_AA", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 115.0 156.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l115.0 0l0 156.0l-115.0 0l0 -156.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l115.28084 0l0 156.07611l-115.28084 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Battery_D {
-            get {
-                return ResourceManager.GetString("Battery_D", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 1234.0 802.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l1234.0 0l0 802.0l-1234.0 0l0 -802.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l1234.0 0l0 802.0l-1234.0 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m0 -0.0 [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Bomb {
-            get {
-                return ResourceManager.GetString("Bomb", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 369.0 801.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l369.0 0l0 801.0l-369.0 0l0 -801.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l369.1076 0l0 801.916l-369.1076 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#000000&quot; d=&quot;m248 [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string BombSide {
-            get {
-                return ResourceManager.GetString("BombSide", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] CALIFB {
-            get {
-                object obj = ResourceManager.GetObject("CALIFB", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] CALIFI {
-            get {
-                object obj = ResourceManager.GetObject("CALIFI", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] CALIFR {
-            get {
-                object obj = ResourceManager.GetObject("CALIFR", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///	&lt;head&gt;
@@ -194,23 +80,6 @@ namespace VanillaRuleGenerator.Properties {
         public static string Capacitor_Discharge {
             get {
                 return ResourceManager.GetString("Capacitor_Discharge", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 346.0 347.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h346v347H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h346.105v347.367H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h354.016v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-line [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Capacitor_Discharge1 {
-            get {
-                return ResourceManager.GetString("Capacitor_Discharge1", resourceCulture);
             }
         }
         
@@ -238,130 +107,6 @@ namespace VanillaRuleGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h348v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.543 5.164h336.914v337.67H5.543z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;round [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Complicated_Wires1 {
-            get {
-                return ResourceManager.GetString("Complicated_Wires1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l348.0 0l0 348.0l-348.0 0l0 -348.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l348.0 0l0 348.0l-348.0 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m-6.0 0l348. [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Component {
-            get {
-                return ResourceManager.GetString("Component", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to body {
-        ///	background: rgb(50, 50, 50);
-        ///}
-        ///
-        ///body, #main-table th::after, textarea, button, input {
-        ///	color: rgb(150, 150, 150);
-        ///}
-        ///
-        ///#main-table, div.popup, textarea, div.error, button, input, pre.diff {
-        ///	background: rgb(40, 40, 40);
-        ///}
-        ///
-        ///#main-table th, #main-table td, pre.diff {
-        ///	border-color: rgb(80, 80, 80);
-        ///}
-        ///
-        ///#logo img, .mod-icon, .icons &gt; div.icon {
-        ///	filter: brightness(0.8);
-        ///}
-        ///
-        ///img.icon[alt=&quot;Tutorial video&quot;] {
-        ///	filter: brightness(1.8);
-        ///}
-        ///
-        ///img.icon[alt=&quot;Source code&quot;] {
-        ///	filter: invert( [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string dark_theme {
-            get {
-                return ResourceManager.GetString("dark_theme", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 203.0 100.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l203.0 0l0 100.0l-203.0 0l0 -100.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l203.71129 0l0 100.0l-203.71129 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m7.1 [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string DVI {
-            get {
-                return ResourceManager.GetString("DVI", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] eye_icon {
-            get {
-                object obj = ResourceManager.GetObject("eye_icon", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to @font-face {
-        ///  font-family: &apos;Special Elite&apos;;
-        ///  font-style: normal;
-        ///  font-weight: 400;
-        ///  src: local(&apos;Special Elite&apos;), local(&apos;SpecialElite-Regular&apos;), url(../font/SpecialElite.ttf);
-        ///}
-        ///@font-face {
-        ///  font-family: &apos;Trebuchet MS&apos;;
-        ///  font-style: normal;
-        ///  font-weight: normal;
-        ///  src: local(&apos;Trebuchet MS&apos;), local(&apos;Trebuchet&apos;), url(../font/trebuc.ttf);
-        ///}
-        ///@font-face {
-        ///  font-family: &apos;Trebuchet MS&apos;;
-        ///  font-style: normal;
-        ///  font-weight: bold;
-        ///  src: local(&apos;Trebuchet MS Bold&apos;), local(&apos;Trebuchet Bold&apos;), l [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string font {
-            get {
-                return ResourceManager.GetString("font", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to /*
-        ///	MIT License
-        ///
-        ///	Copyright 2017 samfun123 and Timwi
-        ///
-        ///	Permission is hereby granted, free of charge, to any person obtaining a copy of this file (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-        ///
-        ///	The above copyright notice and this permission notice  [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string highlighter_js {
-            get {
-                return ResourceManager.GetString("highlighter_js", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///    &lt;head&gt;
@@ -378,67 +123,6 @@ namespace VanillaRuleGenerator.Properties {
         public static string index {
             get {
                 return ResourceManager.GetString("index", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 288.0 115.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l288.0 0l0 115.0l-288.0 0l0 -115.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l288.0 0l0 115.0l-288.0 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m12.0 8.5039 [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string IndicatorWidget {
-            get {
-                return ResourceManager.GetString("IndicatorWidget", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;
-        ///&lt;!-- Created with Inkscape (http://www.inkscape.org/) --&gt;
-        ///
-        ///&lt;svg
-        ///   xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;
-        ///   xmlns:cc=&quot;http://creativecommons.org/ns#&quot;
-        ///   xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;
-        ///   xmlns:svg=&quot;http://www.w3.org/2000/svg&quot;
-        ///   xmlns=&quot;http://www.w3.org/2000/svg&quot;
-        ///   xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
-        ///   xmlns:sodipodi=&quot;http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd&quot;
-        ///   xmlns:inkscape=&quot;http://www.inks [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string International_Morse_Code {
-            get {
-                return ResourceManager.GetString("International_Morse_Code", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to /*! jQuery v3.1.1 | (c) jQuery Foundation | jquery.org/license */
-        ///!function(a,b){&quot;use strict&quot;;&quot;object&quot;==typeof module&amp;&amp;&quot;object&quot;==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error(&quot;jQuery requires a window with a document&quot;);return b(a)}:b(a)}(&quot;undefined&quot;!=typeof window?window:this,function(a,b){&quot;use strict&quot;;var c=[],d=a.document,e=Object.getPrototypeOf,f=c.slice,g=c.concat,h=c.push,i=c.indexOf,j={},k=j.toString,l=j.hasOwnProperty,m=l.toString,n=m.call(Object) [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string jquery_3_1_1_min_js {
-            get {
-                return ResourceManager.GetString("jquery_3_1_1_min_js", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .ui-helper-hidden{display:none}.ui-helper-hidden-accessible{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.ui-helper-reset{margin:0;padding:0;border:0;outline:0;line-height:1.3;text-decoration:none;font-size:100%;list-style:none}.ui-helper-clearfix:before,.ui-helper-clearfix:after{content:&quot;&quot;;display:table;border-collapse:collapse}.ui-helper-clearfix:after{clear:both}.ui-helper-zfix{width:100%;height:100%;top:0;left:0;position:absolute;opacity:0;filt [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string jquery_ui_1_12_1 {
-            get {
-                return ResourceManager.GetString("jquery_ui_1_12_1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to /*! jQuery UI - v1.12.1 - 2016-09-14
-        ///* http://jqueryui.com
-        ///* Includes: widget.js, position.js, data.js, disable-selection.js, effect.js, effects/effect-blind.js, effects/effect-bounce.js, effects/effect-clip.js, effects/effect-drop.js, effects/effect-explode.js, effects/effect-fade.js, effects/effect-fold.js, effects/effect-highlight.js, effects/effect-puff.js, effects/effect-pulsate.js, effects/effect-scale.js, effects/effect-shake.js, effects/effect-size.js, effects/effect-slide.js, effects/effect-trans [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string jquery_ui_1_12_1_min_js {
-            get {
-                return ResourceManager.GetString("jquery_ui_1_12_1_min_js", resourceCulture);
             }
         }
         
@@ -466,23 +150,6 @@ namespace VanillaRuleGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h348v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;round&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Keypads1 {
-            get {
-                return ResourceManager.GetString("Keypads1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///	&lt;head&gt;
@@ -502,117 +169,6 @@ namespace VanillaRuleGenerator.Properties {
         public static string Knobs {
             get {
                 return ResourceManager.GetString("Knobs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h354.016v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;ro [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Knobs1 {
-            get {
-                return ResourceManager.GetString("Knobs1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] ktane_logo {
-            get {
-                object obj = ResourceManager.GetObject("ktane_logo", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ////*
-        /// *  Some useful numbers...
-        /// *
-        /// *  When font-size is 1em/12pt/16px/100%:
-        /// *  1px = 0.0625em (when PPI is 96)
-        /// *  1in = 6em
-        /// *  1pt = 0.0833333em (1/12em)
-        /// *
-        /// */
-        ///
-        ////*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-        ///
-        ////*
-        /// * What follows is the result of much research on cross-browser styling.
-        /// * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
-        /// * Kroc Camen, and the H5BP dev community and team.
-        /// */
-        ///
-        ////* ==================================================== [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string main {
-            get {
-                return ResourceManager.GetString("main", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ////*
-        /// *  Some useful numbers...
-        /// *
-        /// *  When font-size is 1em/12pt/16px/100%:
-        /// *  1px = 0.0625em (when PPI is 96)
-        /// *  1in = 6em
-        /// *  1pt = 0.0833333em (1/12em)
-        /// *
-        /// */
-        ///
-        ////*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-        ///
-        ////*
-        /// * What follows is the result of much research on cross-browser styling.
-        /// * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
-        /// * Kroc Camen, and the H5BP dev community and team.
-        /// */
-        ///
-        ////* ==================================================== [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string main_before {
-            get {
-                return ResourceManager.GetString("main_before", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ////*
-        /// *  Some useful numbers...
-        /// *
-        /// *  When font-size is 1em/12pt/16px/100%:
-        /// *  1px = 0.0625em (when PPI is 96)
-        /// *  1in = 6em
-        /// *  1pt = 0.0833333em (1/12em)
-        /// *
-        /// */
-        ///
-        ////*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-        ///
-        ////*
-        /// * What follows is the result of much research on cross-browser styling.
-        /// * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
-        /// * Kroc Camen, and the H5BP dev community and team.
-        /// */
-        ///
-        ////* ==================================================== [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string main_orig {
-            get {
-                return ResourceManager.GetString("main_orig", resourceCulture);
             }
         }
         
@@ -640,23 +196,6 @@ namespace VanillaRuleGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h354.016v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;ro [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Mazes1 {
-            get {
-                return ResourceManager.GetString("Mazes1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///	&lt;head&gt;
@@ -676,23 +215,6 @@ namespace VanillaRuleGenerator.Properties {
         public static string Memory {
             get {
                 return ResourceManager.GetString("Memory", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h348v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;round&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Memory1 {
-            get {
-                return ResourceManager.GetString("Memory1", resourceCulture);
             }
         }
         
@@ -720,190 +242,6 @@ namespace VanillaRuleGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h348v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;round&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Morse_Code1 {
-            get {
-                return ResourceManager.GetString("Morse_Code1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] Morse_Font {
-            get {
-                object obj = ResourceManager.GetObject("Morse_Font", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l348.0 0l0 348.0l-348.0 0l0 -348.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l348.0 0l0 348.0l-348.0 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m-6.0 0l354. [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string NeedyComponent {
-            get {
-                return ResourceManager.GetString("NeedyComponent", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
-        ///
-        ////* ==========================================================================
-        ///   HTML5 display definitions
-        ///   ========================================================================== */
-        ///
-        ////**
-        /// * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
-        /// */
-        ///
-        ///article,
-        ///aside,
-        ///details,
-        ///figcaption,
-        ///figure,
-        ///footer,
-        ///header,
-        ///hgroup,
-        ///main,
-        ///nav,
-        ///section,
-        ///summary {
-        ///    display: block;
-        ///}
-        ///
-        ////**
-        /// * Correct `inline-block` displa [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string normalize {
-            get {
-                return ResourceManager.GetString("normalize", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] OpusChordsSansStd {
-            get {
-                object obj = ResourceManager.GetObject("OpusChordsSansStd", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] OpusStd {
-            get {
-                object obj = ResourceManager.GetObject("OpusStd", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] OstrichSans_Heavy_90 {
-            get {
-                object obj = ResourceManager.GetObject("OstrichSans_Heavy_90", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] page_bg_noise_01 {
-            get {
-                object obj = ResourceManager.GetObject("page_bg_noise_01", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] page_bg_noise_02 {
-            get {
-                object obj = ResourceManager.GetObject("page_bg_noise_02", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] page_bg_noise_03 {
-            get {
-                object obj = ResourceManager.GetObject("page_bg_noise_03", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] page_bg_noise_04 {
-            get {
-                object obj = ResourceManager.GetObject("page_bg_noise_04", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] page_bg_noise_05 {
-            get {
-                object obj = ResourceManager.GetObject("page_bg_noise_05", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] page_bg_noise_06 {
-            get {
-                object obj = ResourceManager.GetObject("page_bg_noise_06", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] page_bg_noise_07 {
-            get {
-                object obj = ResourceManager.GetObject("page_bg_noise_07", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 322.0 100.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l322.0 0l0 100.0l-322.0 0l0 -100.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l322.5223 0l0 100.0l-322.5223 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m39.84 [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Parallel {
-            get {
-                return ResourceManager.GetString("Parallel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///	&lt;head&gt;
@@ -926,56 +264,6 @@ namespace VanillaRuleGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h354.016v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;ro [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Passwords1 {
-            get {
-                return ResourceManager.GetString("Passwords1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 111.0 100.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l111.0 0l0 100.0l-111.0 0l0 -100.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l111.561676 0l0 100.0l-111.561676 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m2 [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string PS2 {
-            get {
-                return ResourceManager.GetString("PS2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 104.0 100.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l104.0 0l0 100.0l-104.0 0l0 -100.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l104.94226 0l0 100.0l-104.94226 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m18. [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string RJ45 {
-            get {
-                return ResourceManager.GetString("RJ45", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 167.0 100.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l167.0 0l0 100.0l-167.0 0l0 -100.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l167.47244 0l0 100.0l-167.47244 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m13. [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Serial {
-            get {
-                return ResourceManager.GetString("Serial", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///	&lt;head&gt;
@@ -993,65 +281,6 @@ namespace VanillaRuleGenerator.Properties {
         public static string Simon_Says {
             get {
                 return ResourceManager.GetString("Simon_Says", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h348v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;round&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Simon_Says1 {
-            get {
-                return ResourceManager.GetString("Simon_Says1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 604.0 348.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l604.0 0l0 348.0l-604.0 0l0 -348.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l604.0 0l0 348.0l-604.0 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m114.35958 0 [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string SimonComponent_ColourLegend {
-            get {
-                return ResourceManager.GetString("SimonComponent_ColourLegend", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] SpecialElite {
-            get {
-                object obj = ResourceManager.GetObject("SpecialElite", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] specialelite_cyrillic {
-            get {
-                object obj = ResourceManager.GetObject("specialelite_cyrillic", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 100.0 100.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l100.0 0l0 100.0l-100.0 0l0 -100.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l100.0 0l0 100.0l-100.0 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m21.968487 2 [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string StereoRCA {
-            get {
-                return ResourceManager.GetString("StereoRCA", resourceCulture);
             }
         }
         
@@ -1078,74 +307,6 @@ namespace VanillaRuleGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h348v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;round&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string The_Button1 {
-            get {
-                return ResourceManager.GetString("The_Button1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///
-        ///&lt;svg version=&quot;1.1&quot; viewBox=&quot;0.0 0.0 348.0 456.0&quot; fill=&quot;none&quot; stroke=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&lt;clipPath id=&quot;p.0&quot;&gt;&lt;path d=&quot;m0 0l348.0 0l0 456.0l-348.0 0l0 -456.0z&quot; clip-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#p.0)&quot;&gt;&lt;path fill=&quot;#000000&quot; fill-opacity=&quot;0.0&quot; d=&quot;m0 0l348.0 0l0 456.0l-348.0 0z&quot; fill-rule=&quot;nonzero&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#ffffff&quot; d=&quot;m-6.0 108.01 [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string TimerComponent {
-            get {
-                return ResourceManager.GetString("TimerComponent", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] trebuc {
-            get {
-                object obj = ResourceManager.GetObject("trebuc", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] trebucbd {
-            get {
-                object obj = ResourceManager.GetObject("trebucbd", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] trebucbi {
-            get {
-                object obj = ResourceManager.GetObject("trebucbi", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] trebucit {
-            get {
-                object obj = ResourceManager.GetObject("trebucit", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///	&lt;head&gt;
@@ -1164,33 +325,6 @@ namespace VanillaRuleGenerator.Properties {
         public static string Venting_Gas {
             get {
                 return ResourceManager.GetString("Venting_Gas", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h354.016v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;ro [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Venting_Gas1 {
-            get {
-                return ResourceManager.GetString("Venting_Gas1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] web_background {
-            get {
-                object obj = ResourceManager.GetObject("web_background", resourceCulture);
-                return ((byte[])(obj));
             }
         }
         
@@ -1217,23 +351,6 @@ namespace VanillaRuleGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h348v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;round&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Whos_on_First1 {
-            get {
-                return ResourceManager.GetString("Whos_on_First1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///	&lt;head&gt;
@@ -1256,23 +373,6 @@ namespace VanillaRuleGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h348v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M68.95 75.845h196.378v201.008H68.95z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;rou [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Wire_Sequences1 {
-            get {
-                return ResourceManager.GetString("Wire_Sequences1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///	&lt;head&gt;
@@ -1291,23 +391,6 @@ namespace VanillaRuleGenerator.Properties {
         public static string Wires {
             get {
                 return ResourceManager.GetString("Wires", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;svg viewBox=&quot;0.0 0.0 348.0 348.0&quot; fill=&quot;none&quot; stroke-linecap=&quot;square&quot; stroke-miterlimit=&quot;10&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        ///    &lt;clipPath id=&quot;a&quot;&gt;
-        ///        &lt;path d=&quot;M0 0h348v348H0V0z&quot;/&gt;
-        ///    &lt;/clipPath&gt;
-        ///    &lt;g clip-path=&quot;url(#a)&quot;&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M0 0h348v348H0z&quot;/&gt;
-        ///        &lt;path fill=&quot;#fff&quot; d=&quot;M-6 0h348v347.969H-6z&quot;/&gt;
-        ///        &lt;path fill=&quot;#000&quot; fill-opacity=&quot;0&quot; d=&quot;M5.079 5.776h336.913v337.67H5.08z&quot;/&gt;
-        ///        &lt;path stroke=&quot;#000&quot; stroke-width=&quot;2&quot; stroke-linejoin=&quot;round&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string Wires1 {
-            get {
-                return ResourceManager.GetString("Wires1", resourceCulture);
             }
         }
     }
