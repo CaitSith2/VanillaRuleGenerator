@@ -76,6 +76,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Rules\ImageSymbolPool.cs" />
     <Compile Include="VanillaRuleGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rules\BombGame\BigButtonLEDColor.cs" />
